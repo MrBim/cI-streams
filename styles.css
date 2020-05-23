@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#game {
+    width: 100%;
+    height: 0px;
+    padding-bottom: 100%;
+    background-color: seagreen;
+    position: relative;
+}
+
+.stick {
+    position: absolute;
+    background-color: black;
+    content: "";
+    visibility: hidden;
+}
+
+#stick1 {
+    height: 5px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+#stick2 {
+    height: 75%;
+    width: 5px;
+    bottom: 0;
+    left: 25%;
+}
+#stick3 {
+    height: 5px;
+    left: 25%;
+    width: 30%;
+    bottom: 75%;
+}
+#stick4 {
+    height: 15%;
+    width: 5px;
+    top: 25%;
+    left: 55%;
+}
+#stick5 {
+    height: 5px;
+    width: 100px;
+    top: 30%;
+    left: 23%;
+    transform: rotate(-45deg);
+}
+
+#stick6 {
+    width: 60px;
+    height: 70px;
+    border-radius: 50%;
+    top: 40%;
+    left: 51%;
+}
+#stick7 {
+    height: 20%;
+    width: 5px;
+    top: 50%;
+    left: 55%;
+}
+#stick8 {
+    width: 5px;
+    height: 15%;
+    left: 50%;
+    top: 68%;
+    transform: rotate(45deg);
+}
+#stick9 {
+    width: 5px;
+    height: 15%;
+    left: 60%;
+    top: 68%;
+    transform: rotate(-45deg);
+}
+#stick10 {
+    width: 5px;
+    height: 15%;
+    left: 50%;
+    top: 50%;
+    transform: rotate(45deg);
+}
+#stick11 {
+    width: 5px;
+    height: 15%;
+    left: 60%;
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+.visible {
+    visibility: visible;
+}
+.width-display::after {
+    content: "No Min";
+}
+
+@media (min-width: 567px) {
+    .width-display::after {
+        content: "min 567";
+    }
+}
+
+@media (min-width: 768px) {
+    .width-display::after {
+        content: "min 768";
+    }
+}
+@media (min-width: 992px) {
+    .width-display::after {
+        content: "min 992";
+    }
+}
+@media (min-width: 1200px) {
+    .width-display::after {
+        content: "min 1200";
+    }
+}
