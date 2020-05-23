@@ -22,7 +22,7 @@ body {
     position: absolute;
     background-color: black;
     content: "";
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 #stick1 {

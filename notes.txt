@@ -1,1 +1,8 @@
 https://random-word-api.herokuapp.com/word?number=1
+
+challenges are 
+
+get the api resolving properly
+accomodate words with repeating leters. 
+
+refactor it in to vanilla js. 
