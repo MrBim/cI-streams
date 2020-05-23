@@ -99,28 +99,3 @@ body {
 .visible {
     visibility: visible;
 }
-.width-display::after {
-    content: "No Min";
-}
-
-@media (min-width: 567px) {
-    .width-display::after {
-        content: "min 567";
-    }
-}
-
-@media (min-width: 768px) {
-    .width-display::after {
-        content: "min 768";
-    }
-}
-@media (min-width: 992px) {
-    .width-display::after {
-        content: "min 992";
-    }
-}
-@media (min-width: 1200px) {
-    .width-display::after {
-        content: "min 1200";
-    }
-}
