@@ -7,28 +7,24 @@ body {
     padding: 0px;
 }
 
-/* .width-display::after {
-    content: "No Min";
+.scalable-container {
+    width: 50%;
+    height: 0;
+    padding-bottom: 50%;
+    position: relative;
+    margin: 0 auto;
 }
 
-@media (min-width: 567px) {
-    .width-display::after {
-        content: "min 567";
-    }
+.scalable-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
-@media (min-width: 768px) {
-    .width-display::after {
-        content: "min 768";
-    }
+.scalable-child .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-@media (min-width: 992px) {
-    .width-display::after {
-        content: "min 992";
-    }
-}
-@media (min-width: 1200px) {
-    .width-display::after {
-        content: "min 1200";
-    }
-} */
